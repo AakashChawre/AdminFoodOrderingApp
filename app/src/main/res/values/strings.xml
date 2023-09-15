@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AdminFoodOrderingApp</string>
+    <string name="design_by">Design By\nLearnFast</string>
+    <string name="next_txt">next</string>
+    <string name="splash_title">Waves Of Food</string>
+    <string name="logo_description">logo image</string>
+    <string name="boarding_title">Enjoy Restaurant Quality Meals at Home</string>
+    <string name="email_phone_no_txt">Email or Phone Number</string>
+    <string name="password_txt">Password</string>
+    <string name="favorite_food_title">Deliever Favorite Food</string>
+    <string name="login_account_txt">Login To Your\nAdmin Dashboard</string>
+    <string name="login_txt">login</string>
+    <string name="have_account_txt">Don’t Have Account?</string>
+    <string name="or_txt">or</string>
+    <string name="continue_with_txt">Continue With</string>
+    <string name="facebook_txt">Facebook</string>
+    <string name="google_txt">Google</string>
+    <string name="name_txt">Name of Restaurant </string>
+    <string name="sign_up_with_txt">Sign Up With</string>
+    <string name="already_have_an_account_txt">Already Have An Account?</string>
+    <string name="create_account_txt">Create Account</string>
+    <string name="sign_up_here_txt">Sign Up Here For Your\nAdmin Dashboard</string>
+    <string name="choose_your_location_txt">Choose Your Location</string>
+    <string name="choose_location_txt">Choose Location</string>
+    <string name="location_screen_paragraph_txt">To provide you with the best dining experience, we need your permission to access your device\'s location. By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure a seamless food delivery experience.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore_your_favorite_food_txt">Explore Your Favorite Food</string>
+    <string name="address_hint_txt">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual</string>
+    <string name="default_web_client_id">75657770795-noskt00s9gm41athou5vf0p2f4815s88.apps.googleusercontent.com</string>
+
+</resources>

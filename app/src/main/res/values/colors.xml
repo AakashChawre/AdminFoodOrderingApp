@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="start">#04FA60</color>
+    <color name="ent">#358E57</color>
+
+    <color name="green">#53E88B</color>
+    <color name="edt_hint_color">#9A9797</color>
+    <color name="orange">#FFC107</color>
+    <color name="red">#FF3B3B</color>
+
+</resources>

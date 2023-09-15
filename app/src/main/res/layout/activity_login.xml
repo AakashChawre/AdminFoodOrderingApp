@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:text="@string/splash_title"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/favorite_food_title"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:text="@string/login_account_txt"
+        android:gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:autofillHints=""
+        android:background="@drawable/white_button_shape"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="@string/email_phone_no_txt"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp"
+        android:textColorHint="@color/edt_hint_color"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:autofillHints=""
+        android:background="@drawable/white_button_shape"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="@string/password_txt"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp"
+        android:textColorHint="@color/edt_hint_color"
+        app:layout_constraintEnd_toEndOf="@+id/edt_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:text="@string/or_txt"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:text="@string/continue_with_txt"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_shape"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:text="@string/facebook_txt"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/facebook" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_shape"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:text="@string/google_txt"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/google" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_button_gradient"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="14dp"
+        android:text="@string/login_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <TextView
+        android:id="@+id/tv_don_t_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:text="@string/have_account_txt"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acb_login" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/design_by"
+        android:fontFamily="@font/yeon_sung_regular"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

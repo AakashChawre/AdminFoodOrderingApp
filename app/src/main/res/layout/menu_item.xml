@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/menu3" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeon_sung_regular"
+            android:paddingStart="10dp"
+            android:text="Spacy fresh crab"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_price"
+            app:layout_constraintStart_toEndOf="@+id/iv_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingStart="10dp"
+            android:text="$ 35"
+            android:textColor="@color/green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib_minus"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addtocartshape"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/ib_plus"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addtocartshape"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ib_trash"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/trash" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
